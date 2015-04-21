@@ -5,9 +5,24 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\sBuildMenu</sprite>
+    <sprite>sprites\sBuildPlace</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scrBuildMenuCreate.gml</script>
+    <script>scripts\scrBuildMenuStep.gml</script>
+    <script>scripts\scrBuildMenuShow.gml</script>
+    <script>scripts\scrBuildMenuDraw.gml</script>
+  </scripts>
+  <objects name="objects">
+    <object>objects\oBuildPlace</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rTest</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
