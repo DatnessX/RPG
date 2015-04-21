@@ -12,14 +12,22 @@
       <sprite>sprites\sPlayerBelly</sprite>
       <sprite>sprites\sPlayerHead</sprite>
     </sprites>
+    <sprite>sprites\sBuildMenu</sprite>
+    <sprite>sprites\sBuildPlace</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts"/>
+  <scripts name="scripts">
+    <script>scripts\scrBuildMenuCreate.gml</script>
+    <script>scripts\scrBuildMenuStep.gml</script>
+    <script>scripts\scrBuildMenuShow.gml</script>
+    <script>scripts\scrBuildMenuDraw.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\oPlayer</object>
     <object>objects\settings</object>
     <object>objects\parWall</object>
+    <object>objects\oBuildPlace</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mapTest</room>
