@@ -14,6 +14,7 @@
     </sprites>
     <sprite>sprites\sBuildMenu</sprite>
     <sprite>sprites\sBuildPlace</sprite>
+    <sprite>sprites\killme</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
