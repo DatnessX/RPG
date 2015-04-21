@@ -83,10 +83,10 @@ h_spd = 0;                                                                      
 v_spd = 0;                                                                                 // Vertical fragment
 
 // Check for input           ***************************************************************
-if (keyboard_check(ord("W"))) {v_spd -= spd; show_message("")}
-if (keyboard_check(ord("S"))) {v_spd += spd; show_message("")}
-if (keyboard_check(ord("D"))) {h_spd += spd; show_message("")}
-if (keyboard_check(ord("A"))) {h_spd -= spd; show_message("")}
+if (keyboard_check(ord("W"))) {v_spd -= spd;}
+if (keyboard_check(ord("S"))) {v_spd += spd;}
+if (keyboard_check(ord("D"))) {h_spd += spd;}
+if (keyboard_check(ord("A"))) {h_spd -= spd;}
 
 
 // Horizontal collisions    ****************************************************************
@@ -113,7 +113,7 @@ for (i = abs(v_spd); i &gt; 0; i -= 1;)
 if (x = xprevious &amp;&amp; y = yprevious)
     {
     f_index = 0;                                                                           // Start playing footsteps again (loop[array_lenght] = 0)
-    if (!s_play) {audio_stop_sound(snd_Footsteps);}
+    if (!s_play) {audio_stop_sound(sndFootsteps);}
     
     s_play = 1;                                                                            // Play footsteps
     
@@ -124,7 +124,7 @@ else
     if (f_index &gt; 6.5) {f_index = -0.5;}                                                   // On target point descrease index
     if (s_play)
         {
-        audio_play_sound(snd_Footsteps, 0, true);                                          // Play footsteps looped
+        audio_play_sound(sndFootsteps, 0, true);                                          // Play footsteps looped
         s_play = false;
         }
     }

@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sndFootsteps</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\sPlayerBelly</sprite>
@@ -13,9 +15,7 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts">
-    <script>scripts\script1.gml</script>
-  </scripts>
+  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\oPlayer</object>
     <object>objects\settings</object>
