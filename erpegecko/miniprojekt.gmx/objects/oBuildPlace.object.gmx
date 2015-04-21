@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>scrBuildMenuCreate(false,0.2)
+
 </string>
           </argument>
         </arguments>
@@ -50,18 +51,30 @@
             <kind>1</kind>
             <string>scrBuildMenuStep()
 
-if mouse_check_button_pressed(mb_left)
+if (mouse_check_button_pressed(mb_left))
 {
-    if distance_to_point(mouse_x,mouse_y)=0
-    {
-        if !buildMenuShow scrBuildMenuShow(true)
-    }
-    else
-    {
-        buildMenuShow=false
-        buildMenuScale=0
-    }
+ if (distance_to_point(mouse_x,mouse_y) = 0)
+    {   
+    if (buildMenuShow = 0)
+        {
+        scrBuildMenuShow(true)     
+        }
+    }    
+    builded = !builded;
+
 }
+
+if (!builded)
+        {
+         if (buildMenuScale &gt; 0 )
+            {
+            buildMenuShow = 0;
+            buildMenuScale -= buildMenuScaleSpeed;
+            }
+            else { builded = 0; buildMenuShow = 0;}
+        }
+    
+    
 </string>
           </argument>
         </arguments>
@@ -84,9 +97,9 @@ if mouse_check_button_pressed(mb_left)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scrBuildMenuDraw()
+            <string>draw_sprite(sBuildPlace,0,x,y)
+scrBuildMenuDraw()
 
-draw_sprite(sBuildPlace,0,x,y)
 </string>
           </argument>
         </arguments>

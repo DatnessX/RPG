@@ -1,3 +1,3 @@
 ///scrBuildMenuStep()
 
-if (buildMenuShow) && (buildMenuScale<1) buildMenuScale+=buildMenuScaleSpeed;
+if (buildMenuShow = 1 && buildMenuScale<1) {buildMenuScale+=buildMenuScaleSpeed;}
