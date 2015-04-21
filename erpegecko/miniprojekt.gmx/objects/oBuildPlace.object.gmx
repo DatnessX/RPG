@@ -69,7 +69,7 @@ if (!builded)
          if (buildMenuScale &gt; 0 )
             {
             buildMenuShow = 0;
-            buildMenuScale -= buildMenuScaleSpeed;
+            buildMenuScale -= (buildMenuScaleSpeed+log2(buildMenuScaleSpeed));
             }
             else { builded = 0; buildMenuShow = 0;}
         }
