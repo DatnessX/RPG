@@ -4,10 +4,26 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sounds name="sound">
+    <sound>sound\sndFootsteps</sound>
+  </sounds>
+  <sprites name="sprites">
+    <sprites name="Player">
+      <sprite>sprites\sPlayerBelly</sprite>
+      <sprite>sprites\sPlayerHead</sprite>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts"/>
+  <objects name="objects">
+    <object>objects\oPlayer</object>
+    <object>objects\settings</object>
+    <object>objects\parWall</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\mapTest</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
