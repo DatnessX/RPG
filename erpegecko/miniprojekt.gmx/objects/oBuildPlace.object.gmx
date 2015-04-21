@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scrBuildMenuCreate(false,0.05);
-
+            <string>scrBuildMenuCreate(false,0.2)
 </string>
           </argument>
         </arguments>
@@ -63,7 +62,6 @@ if mouse_check_button_pressed(mb_left)
         buildMenuScale=0
     }
 }
-
 </string>
           </argument>
         </arguments>
@@ -89,7 +87,6 @@ if mouse_check_button_pressed(mb_left)
             <string>scrBuildMenuDraw()
 
 draw_sprite(sBuildPlace,0,x,y)
-
 </string>
           </argument>
         </arguments>
