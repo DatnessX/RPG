@@ -4,6 +4,7 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
+<<<<<<< HEAD
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sBuildMenu</sprite>
@@ -22,6 +23,27 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rTest</room>
+=======
+  <sounds name="sound">
+    <sound>sound\sndFootsteps</sound>
+  </sounds>
+  <sprites name="sprites">
+    <sprites name="Player">
+      <sprite>sprites\sPlayerBelly</sprite>
+      <sprite>sprites\sPlayerHead</sprite>
+    </sprites>
+  </sprites>
+  <backgrounds name="background"/>
+  <paths name="paths"/>
+  <scripts name="scripts"/>
+  <objects name="objects">
+    <object>objects\oPlayer</object>
+    <object>objects\settings</object>
+    <object>objects\parWall</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\mapTest</room>
+>>>>>>> origin/master
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
