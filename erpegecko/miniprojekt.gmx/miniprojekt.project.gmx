@@ -16,7 +16,9 @@
     <sprite>sprites\sBuildPlace</sprite>
     <sprite>sprites\killme</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bDemotest</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scrBuildMenuCreate.gml</script>

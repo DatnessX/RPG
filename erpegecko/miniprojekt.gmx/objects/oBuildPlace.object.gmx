@@ -3,7 +3,7 @@
   <spriteName>sBuildPlace</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>scrBuildMenuCreate(false,0.2)
-
 </string>
           </argument>
         </arguments>
@@ -59,23 +58,12 @@ if (mouse_check_button_pressed(mb_left))
         {
         scrBuildMenuShow(true)     
         }
+    builded = true;
     }
-    builded = !builded;
-}
-else
-{
-    if (!builded)
-        {
-         if (buildMenuScale &gt; 0 )
-            {
-            buildMenuShow = 0;
-            buildMenuScale -= (buildMenuScaleSpeed);
-            }
-            else { builded = 0; buildMenuShow = 0;}
-        }
-}
-
-/*if (!builded)
+    else
+    {
+    builded = false;
+    /*if (!builded)
         {
          if (buildMenuScale &gt; 0 )
             {
@@ -84,6 +72,18 @@ else
             }
             else { builded = 0; buildMenuShow = 0;}
         }*/
+    }
+}
+
+if (!builded)
+        {
+         if (buildMenuScale &gt; 0 )
+            {
+            buildMenuShow = 0;
+            buildMenuScale -= (buildMenuScaleSpeed);
+            }
+            else { builded = 0; buildMenuShow = 0;}
+        }
 </string>
           </argument>
         </arguments>
